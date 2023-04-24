@@ -1,0 +1,17 @@
+FROM centos
+LABEL Name="ankita"
+LABEL  Emailid="ankita@gmail.com"
+ENV Name=cloudlnowledge
+ENV pass=docker
+RUN useradd $Name && echo "Name:pass" |chpasswd
+RUN touch india
+RUN yum update -y && yum install -y httpd
+RUN yum install tree -y
+USER $NAME
+WORKDIR /var/www/html
+RUN 
+RUN
+COPY india /var/www/html
+ADD <website k name enter>
+CMD [" tree"]
+
