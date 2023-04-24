@@ -1,0 +1,14 @@
+from ubuntu
+label name="ankita"
+run apt-get update
+run touch abc
+run touch abc 
+run apt-get install tree -y tree \
+    python2 \
+    openssh-server \
+    openssh-client \
+run mkdir -p /var/run/sshd
+Expose 22
+CMD ["/usr/sbin/sshd","-D"]
+
+
